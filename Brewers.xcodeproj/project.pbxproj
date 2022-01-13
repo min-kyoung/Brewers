@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A92E381427901B25006AAF37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E381327901B25006AAF37 /* AppDelegate.swift */; };
 		A92E381627901B25006AAF37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E381527901B25006AAF37 /* SceneDelegate.swift */; };
-		A92E381827901B25006AAF37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E381727901B25006AAF37 /* ViewController.swift */; };
-		A92E381B27901B25006AAF37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92E381927901B25006AAF37 /* Main.storyboard */; };
 		A92E381D27901B27006AAF37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92E381C27901B27006AAF37 /* Assets.xcassets */; };
 		A92E382027901B27006AAF37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92E381E27901B27006AAF37 /* LaunchScreen.storyboard */; };
+		A92E382827901BA4006AAF37 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E382727901BA4006AAF37 /* BeerListViewController.swift */; };
+		A92E382A27901BC2006AAF37 /* BeerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E382927901BC2006AAF37 /* BeerListCell.swift */; };
+		A92E382D27901BF0006AAF37 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A92E382C27901BF0006AAF37 /* Kingfisher */; };
+		A92E383027901C07006AAF37 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A92E382F27901C07006AAF37 /* SnapKit */; };
+		A92E383227901C1C006AAF37 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E383127901C1C006AAF37 /* Beer.swift */; };
+		A92E383427902055006AAF37 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E383327902055006AAF37 /* BeerDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A92E381027901B25006AAF37 /* Brewers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brewers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92E381327901B25006AAF37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A92E381527901B25006AAF37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A92E381727901B25006AAF37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A92E381A27901B25006AAF37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A92E381C27901B27006AAF37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A92E381F27901B27006AAF37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A92E382127901B27006AAF37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A92E382727901BA4006AAF37 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
+		A92E382927901BC2006AAF37 /* BeerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListCell.swift; sourceTree = "<group>"; };
+		A92E383127901C1C006AAF37 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		A92E383327902055006AAF37 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92E382D27901BF0006AAF37 /* Kingfisher in Frameworks */,
+				A92E383027901C07006AAF37 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +66,10 @@
 			children = (
 				A92E381327901B25006AAF37 /* AppDelegate.swift */,
 				A92E381527901B25006AAF37 /* SceneDelegate.swift */,
-				A92E381727901B25006AAF37 /* ViewController.swift */,
-				A92E381927901B25006AAF37 /* Main.storyboard */,
+				A92E382727901BA4006AAF37 /* BeerListViewController.swift */,
+				A92E383327902055006AAF37 /* BeerDetailViewController.swift */,
+				A92E383127901C1C006AAF37 /* Beer.swift */,
+				A92E382927901BC2006AAF37 /* BeerListCell.swift */,
 				A92E381C27901B27006AAF37 /* Assets.xcassets */,
 				A92E381E27901B27006AAF37 /* LaunchScreen.storyboard */,
 				A92E382127901B27006AAF37 /* Info.plist */,
@@ -83,6 +93,10 @@
 			dependencies = (
 			);
 			name = Brewers;
+			packageProductDependencies = (
+				A92E382C27901BF0006AAF37 /* Kingfisher */,
+				A92E382F27901C07006AAF37 /* SnapKit */,
+			);
 			productName = Brewers;
 			productReference = A92E381027901B25006AAF37 /* Brewers.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +124,10 @@
 				Base,
 			);
 			mainGroup = A92E380727901B25006AAF37;
+			packageReferences = (
+				A92E382B27901BF0006AAF37 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				A92E382E27901C07006AAF37 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = A92E381127901B25006AAF37 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +144,6 @@
 			files = (
 				A92E382027901B27006AAF37 /* LaunchScreen.storyboard in Resources */,
 				A92E381D27901B27006AAF37 /* Assets.xcassets in Resources */,
-				A92E381B27901B25006AAF37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +154,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A92E381827901B25006AAF37 /* ViewController.swift in Sources */,
+				A92E382827901BA4006AAF37 /* BeerListViewController.swift in Sources */,
+				A92E383427902055006AAF37 /* BeerDetailViewController.swift in Sources */,
 				A92E381427901B25006AAF37 /* AppDelegate.swift in Sources */,
+				A92E383227901C1C006AAF37 /* Beer.swift in Sources */,
 				A92E381627901B25006AAF37 /* SceneDelegate.swift in Sources */,
+				A92E382A27901BC2006AAF37 /* BeerListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A92E381927901B25006AAF37 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A92E381A27901B25006AAF37 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A92E381E27901B27006AAF37 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -295,7 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "min-kyoung.Brewers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +325,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "min-kyoung.Brewers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -339,6 +351,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A92E382B27901BF0006AAF37 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.2;
+			};
+		};
+		A92E382E27901C07006AAF37 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A92E382C27901BF0006AAF37 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A92E382B27901BF0006AAF37 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		A92E382F27901C07006AAF37 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A92E382E27901C07006AAF37 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A92E380827901B25006AAF37 /* Project object */;
 }
