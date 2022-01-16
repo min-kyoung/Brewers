@@ -64,22 +64,23 @@ extension BeerListViewController: UITableViewDataSourcePrefetching {
     
 } // BeerListViewController
 
+// 데이터 Fetching
 private extension BeerListViewController {
-    func fetchBeer(of page: Int) {
+    func fetchBeer(of page: Int) { // 페이지마다 fetching
         guard let url = URL(string: "https://api.punkapi.com/v2/beers?page=\(page)"),
               // dataTasks 안에 있는 요청된 url이 새롭게 요청된 url 안에 없는 새로운 값이어야 함
               dataTasks.firstIndex(where: { $0.originalRequest?.url == url }) == nil
               else { return }
         
         var request = URLRequest(url: url)
-        request.httpMethod = "GET"
+        request.httpMethod = "GET" // GET 방식으로 요청
         
         let dataTask = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
             guard error == nil,
                   let self = self,
                   let response = response as? HTTPURLResponse,
                   let data = data,
-                  let beers = try? JSONDecoder().decode([Beer].self, from: data) else {
+                  let beers = try? JSONDecoder().decode([Beer].self, from: data) else { // 받은 데이터가 정상이라면 맥주의 배열로 전달되고 data를 통해 받음
                 print("ERROR: URLSession data task \(error?.localizedDescription ?? "")")
                 return
             }

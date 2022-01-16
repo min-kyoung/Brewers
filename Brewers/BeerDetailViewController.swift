@@ -39,6 +39,7 @@ extension BeerDetailViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 3:
+            // foodPairing은 문자열의 배열로 데이터를 주기 때문에 그 갯수만큼 보여주어야 함
             return beer?.foodPairing?.count ?? 0
         default:
             return 1
