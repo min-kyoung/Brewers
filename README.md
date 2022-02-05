@@ -27,7 +27,7 @@ PunkAPI를 통해 맥주 리스트를 표현하고 네비게이션으로 화면�
   **File > Swift Packages > Add Package Dependency**에서 아래 두가지 openAPI 설치
     ```
     https://github.com/SnapKit/SnapKit.git
-    https://github.com/onevcate/KingFisher.git
+    https://github.com/onevcat/Kingfisher.git
     ```
 ## Files
 > BeerListViewController.swift
